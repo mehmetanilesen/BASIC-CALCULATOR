@@ -47,12 +47,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_height="551dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textofnumbers"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
@@ -120,19 +119,19 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="496dp"
         android:background="@drawable/buttonnumberbgd"
         android:elevation="7dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/textofnumbers"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="225dp">
@@ -156,7 +155,7 @@
 
             <Button
                 android:id="@+id/six"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="2dp"
@@ -206,6 +205,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="225dp">
@@ -278,6 +278,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="225dp">
@@ -352,10 +353,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/textofnumbers"
         app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
@@ -370,8 +371,8 @@
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
             android:elevation="7dp"
-            android:text="FUN"
             android:onClick="makeFun"
+            android:text="FUN"
             android:textColor="#607D8B"
             android:textSize="24sp" />
 
