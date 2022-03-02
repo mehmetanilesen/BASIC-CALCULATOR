@@ -120,10 +120,11 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="496dp"
+        android:layout_height="0dp"
         android:background="@drawable/buttonnumberbgd"
         android:elevation="7dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/textofnumbers"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
